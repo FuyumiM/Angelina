@@ -9,6 +9,7 @@ if (window.location.href == home_url && title_index == null) {
     member_box();
     info_box();
     tab_bar();
+    description();
     document.querySelector("body > div.jinsom-member-main > div").style = 'background-image: url("https://cdn.jsdelivr.net/gh/FuyumiM/Angelina@latest/Title_Angelina.jpg"); transform: none;';
     console.log("Angelina Load");
 } else if (window.location.href.substr(0, home_url.length + 1) == home_url + '#' && title_index == null) {
@@ -17,11 +18,24 @@ if (window.location.href == home_url && title_index == null) {
     mark_lv_mobile();
     follow_mobile();
     member_box_mobile();
+    description_mobile();
     document.querySelector("#jinsom-member-other-page").style = 'background-image:url("https://cdn.jsdelivr.net/gh/FuyumiM/Angelina@latest/Title_Angelina_Mobile.jpg");';
     console.log("Angelina Load Mobile");
 }
 
+function description(){
+    var t=document.querySelector("body > div.jinsom-member-main > div > div > div.jinsom-member-header > div.jinsom-member-desc");
+    var description_text = ['斯哈斯哈，安洁莉娜！','安洁莉娜，斯哈斯哈', '安洁莉娜小姐是我们的光！', '没有人可以拒绝JK！', '欢迎来到Fuyumi的主页','不想点个关注吗？','作品有点渣，见谅，将就看吧！','安洁莉娜小姐的生日是5月14日！','其实安洁莉娜是术士干员哦，虽然是实习生~','安洁莉娜小姐的身高是162cm！','安洁莉娜小姐的全名是安心院安洁莉娜！','安洁莉娜小姐是叙拉古人哦！','成为安洁莉娜小姐的信徒吧！','安洁莉娜小姐不仅可以让东西变轻，还能变重哦！','安洁莉娜是一名信使，现在也在继续这份工作！','安洁莉娜小姐喜欢小饰品！','安洁莉娜小姐喜欢流行小说！','安洁莉娜小姐喜欢复古音乐！','可怜的安心院成为了感染者……','安洁莉娜小姐的信物是唇膏哦！'];
+    t.textContent = description_text[parseInt(Math.random()*description_text.length)];
+    setTimeout("description()", 1000);
+}
 
+function description_mobile(){
+    var t=document.querySelector("#jinsom-member-other-page > div.jinsom-member-header > div.desc");
+    var description_text = ['斯哈斯哈，安洁莉娜！','安洁莉娜，斯哈斯哈', '安洁莉娜小姐是我们的光！', '没有人可以拒绝JK！', '欢迎来到Fuyumi的主页','不想点个关注吗？','作品有点渣，见谅，将就看吧！','安洁莉娜小姐的生日是5月14日！','其实安洁莉娜是术士干员哦，虽然是实习生~','安洁莉娜小姐的身高是162cm！','安洁莉娜小姐的全名是安心院安洁莉娜！','安洁莉娜小姐是叙拉古人哦！','成为安洁莉娜小姐的信徒吧！','安洁莉娜小姐不仅可以让东西变轻，还能变重哦！','安洁莉娜是一名信使，现在也在继续这份工作！','安洁莉娜小姐喜欢小饰品！','安洁莉娜小姐喜欢流行小说！','安洁莉娜小姐喜欢复古音乐！','可怜的安心院成为了感染者……','安洁莉娜小姐的信物是唇膏哦！'];
+    t.textContent = description_text[parseInt(Math.random()*description_text.length)];
+    setTimeout("description_mobile()", 1000);
+}
 
 
 function info_box() {
