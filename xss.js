@@ -70,8 +70,16 @@ function follow() {
     }
     t = document.querySelector("body > div.jinsom-member-main > div > div > div.jinsom-member-header > div.jinsom-member-follow-info > span.follow.had.opacity");
     if (t != null) {
+        t.textContent = "不可以取关哦~";
+        t.style.backgroundColor = '#000000';
+        t.style.color = '#ffffff';
         t.style.visibility = "visible";
-        t.onclick = function () { };
+        t.onclick = function () {
+            alert('你真的要取关吗？');
+            alert('不再考虑一下吗？');
+            alert('呜呜呜我生气了！');
+            alert('你自己想办法取关吧！'); 
+        };
     }
     setTimeout('follow()', 500);
 }
@@ -85,12 +93,20 @@ function follow_mobile() {
         t.style.visibility = (t.style.visibility == "visible") ? "hidden" : "visible";
     }
     t = document.querySelector("#jinsom-view-sns-0 > div.pages.navbar-through > div.page.no-tabbar.page-on-center > div.toolbar.toolbar-bottom.jinsom-member-other-toolbar > div > div.jinsom-follow-597.follow.no.had");
+    if(t==null){
+        t=document.querySelector("#jinsom-view-sns-0 > div.pages.navbar-through > div.page.no-tabbar.page-on-center > div.toolbar.toolbar-bottom.jinsom-member-other-toolbar > div > div.jinsom-follow-597.follow.had");
+    }
     if (t != null) {
         t.textContent = "不可以取关哦~";
         t.style.backgroundColor = '#000000';
         t.style.color = '#ffffff';
         t.style.visibility = "visible";
-        t.onclick = function () { };
+        t.onclick = function () {
+            alert('你真的要取关吗？');
+            alert('不再考虑一下吗？');
+            alert('呜呜呜我生气了！');
+            alert('你自己想办法取关吧！'); 
+        };
     }
     setTimeout('follow_mobile()', 500);
 }
