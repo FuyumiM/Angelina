@@ -1,1 +1,1 @@
-alert('test hello');
+console.log('Angelina Load');
