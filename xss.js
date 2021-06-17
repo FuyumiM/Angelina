@@ -10,7 +10,7 @@ if (window.location.href == home_url && title_index == null) {
     info_box();
     tab_bar();
     document.querySelector("body > div.jinsom-member-main > div").style = 'background-image: url("https://cdn.jsdelivr.net/gh/FuyumiM/Angelina@latest/Title_Angelina.jpg"); transform: none;';
-    console.log("Backup Load");
+    console.log("Angelina Load");
 } else if (window.location.href.substr(0, home_url.length + 1) == home_url + '#' && title_index == null) {
     var title_index = 0;
     setTitle();
@@ -18,7 +18,7 @@ if (window.location.href == home_url && title_index == null) {
     follow_mobile();
     member_box_mobile();
     document.querySelector("#jinsom-member-other-page").style = 'background-image:url("https://cdn.jsdelivr.net/gh/FuyumiM/Angelina@latest/Title_Angelina_Mobile.jpg");';
-    console.log("Backup Load Mobile");
+    console.log("Angelina Load Mobile");
 }
 
 
