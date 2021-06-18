@@ -129,7 +129,7 @@ function mark_lv() {
     var t = document.querySelector("body > div.jinsom-member-main > div > div > div.jinsom-member-header > div.jinsom-member-username > span.jinsom-mark.jinsom-lv");
     if (t != null) {
         t.title = "经验值：是多少呢~这是个~秘~密~";
-        t.textContent = "❤❤安洁莉娜单推人❤❤";
+        t.textContent = "★★★★★安洁莉娜单推人★★★★★";
         t.style = "background:#8f4b2e;";
     }
 }
@@ -138,7 +138,7 @@ function mark_lv_mobile() {
     var t = document.querySelector("#jinsom-member-other-page > div.jinsom-member-header > div.name > span.jinsom-mark.jinsom-lv");
     if (t != null) {
         t.title = "经验值：是多少呢~这是个~秘~密~";
-        t.textContent = "❤❤安洁莉娜单推人❤❤";
+        t.textContent = "★★★★★安洁莉娜单推人★★★★★";
         t.style = "background:#8f4b2e;";
     }
 }
